@@ -4,7 +4,7 @@ int fDrink;
 bool repeat = true;
 
 int main() {
-	while (repeat == true) { //Makes sure the user cannot put an invalid number, I also tried this for strings but I couldn't make it work
+	while (repeat == true) { //Makes sure the user cannot put an invalid number, I also tried this for if the user writes text instead of a number, but I couldn't make it work
 		repeat = false;
 		std::cout << "Select your favorite drink: ";
 		std::cout << "\n(1)| Coffee";
@@ -23,6 +23,7 @@ int main() {
 			std::cout << "Coke will give you a white smile";
 		}
 		else {
+			system("cls");
 			std::cout << "Not valid, try again\n";
 			repeat = true;
 		}
